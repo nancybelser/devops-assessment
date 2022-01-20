@@ -1,4 +1,4 @@
-# devops-test
+# devops-assessment
 
 ### Description
 * This exerice is to test your skills with Node.js, Docker, and Kubernetes. You will need to dockerize a Node.js app, build out the image, and deploy it to Kubernetes. 
