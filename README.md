@@ -18,7 +18,7 @@
 ### Access Info
 * SSH
     * User: ubuntu
-    * Host: fistInitialLastName.edifyops.dev
+    * Host: firstInitialLastName.edifyops.dev
         * Example: jsmith.edifyops.dev
     * Key: link to bucket included the email from us
 * Kubectl
@@ -39,4 +39,4 @@
 | App | 443 |
 
 ### Questions
-* Email devops-test@edify.cx
+* Email devops-assessment@edify.cx
