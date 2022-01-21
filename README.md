@@ -10,8 +10,9 @@
 * Upload that image to docker registry
 * Build the Kubernetes files to deploy the application
 * Deploy the application to Kubernetes cluster
+* Update Nginx to support port to the deployed application
 * Build CI/CD pipeline files (your preference)
-* Build configmaps on the cluster to contain (for our review):
+* In the home directory upload include the following files for our review:
     * Dockerfile
     * Pipeline file
 
@@ -21,8 +22,6 @@
     * Host: firstInitialLastName.edifyops.dev
         * Example: jsmith.edifyops.dev
     * Key: link to bucket included the email from us
-* Kubectl
-    * Files in the bucket included in email from us
 
 ### Environment
 * Ubuntu
@@ -30,13 +29,15 @@
 * Docker Registy
 * Nginx
 
-
 ### Services
 | Service | Port |
 | ------ | ------ |
 | Minikube | 9443 |
-| Docker Registry | 6000 |
+| Docker Registry | 7000 |
 | App | 443 |
+
+### IMPORTANT NOTE
+* Currently there is an issue with kubectl remote access. Changes will need to be made on the box.
 
 ### Questions
 * Email devops-assessment@edify.cx
