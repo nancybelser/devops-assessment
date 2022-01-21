@@ -30,7 +30,10 @@
 * Minikube
 * Docker Registry
 * Nginx
- 
+
+### Source Code
+* This repo will be located in the home folder of your server
+
 ### Services
 | Service | Port |
 | ------ | ------ |
