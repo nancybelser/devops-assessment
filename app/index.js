@@ -6,7 +6,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/healthcheck', function(req, res) {
-  res.send('');
+  res.send('server online');
 });
 
 app.listen(3000);

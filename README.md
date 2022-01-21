@@ -16,7 +16,27 @@
     * Pipeline file
 
 ### Access Info
-* Todo
+* SSH
+    * User: ubuntu
+    * Host: fistInitialLastName.edifyops.dev
+        * Example: jsmith.edifyops.dev
+    * Key: link to bucket included the email from us
+* Kubectl
+    * Files in the bucket included in email from us
+
+### Environment
+* Ubuntu
+* Minikube
+* Docker Registy
+* Nginx
+
+
+### Services
+| Service | Port |
+| ------ | ------ |
+| Minikube | 9443 |
+| Docker Registry | 6000 |
+| App | 443 |
 
 ### Questions
 * Email devops-test@edify.cx
