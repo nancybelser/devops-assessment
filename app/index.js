@@ -8,6 +8,10 @@ app.get('/', function(req, res) {
   res.send('Hello World');
 });
 
+app.get('/info', function(req, res) {
+  res.send('Created by Nancy - HIRE ME!');
+});
+
 app.get('/healthcheck', function(req, res) {
   res.send('server online');
 });
