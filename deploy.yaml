@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nancy-eda
+  labels:
+    app: nancy-eda
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        app: nancy-eda
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nancy-eda
+    spec:
+      containers:
+      - image: nancybelser/devops-assessment-nancy:latest
+        name: nancy-eda
+        ports:
+        - containerPort: 3000
+        resources: {}
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nancy-eda-service
+  labels:
+    app: nancy-eda
+spec:
+  selector:
+    app: nancy-eda
+  type: NodePort
+  ports:
+  - port: 3000
+    nodePort: 31364
+    targetPort: 3000
+    protocol: TCP
+    name: http
